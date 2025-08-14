@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 15:25:34 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/08/13 18:06:25 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/08/14 14:13:53 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,6 @@
 # include <unistd.h>
 # include <fcntl.h>
 # include <stdlib.h>
-
-# ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 10
-# endif
 
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s);
