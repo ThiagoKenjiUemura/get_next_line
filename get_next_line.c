@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/08 15:25:32 by thiagouemur       #+#    #+#             */
-/*   Updated: 2025/08/14 14:15:02 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/08/14 14:35:56 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,10 @@ static char	*update_save(char *remainder)
 	while (remainder[i] != '\n' && remainder[i] != '\0')
 		i++;
 	if (remainder[i] == '\0')
+	{
+		free(remainder);
 		return (NULL);
+	}
 	tmp = ft_substr(remainder, i + 1, remainder_len - i);
 	free(remainder);
 	return (tmp);
